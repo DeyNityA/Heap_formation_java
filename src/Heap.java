@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Heap<T extends Comparable> {
+public class Heap<T extends Comparable<T>> {
     private ArrayList<T> arr;
     public Heap(){
         arr= new ArrayList<>();
@@ -51,3 +51,5 @@ public class Heap<T extends Comparable> {
         return this.arr;
     }
 }
+
+
